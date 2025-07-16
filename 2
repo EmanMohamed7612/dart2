@@ -1,0 +1,12 @@
+void printCityInfo(String? city) {
+  String City = city ?? "Unknown";
+  print("City: $City");
+
+  int length = City.length;
+  print("City name length: $length");
+
+  print("In uppercase: ${City.toUpperCase()}");
+}
+void main(){
+  printCityInfo(null);
+}
