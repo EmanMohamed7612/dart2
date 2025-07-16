@@ -1,0 +1,12 @@
+void sendMessage(String name, [String? message]) {
+  message ??= "No message provided.";
+  String time = DateTime.now().toString();
+
+  print("Sending message to $name");
+  print("Time: $time");
+  print("Message: $message");
+}
+
+void main(){
+sendMessage("Ali", "How are you?");
+}
