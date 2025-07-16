@@ -1,0 +1,13 @@
+void printGrades(String student, double math, double science) {
+  double avg = (math + science) / 2;
+  String status = avg >= 50 ? "Passed" : "Failed";
+
+  print("Student: $student");
+  print("Math: $math, Science: $science");
+  print("Average: $avg");
+  print("Status: $status");
+}
+
+void main(){
+  printGrades("Eman", 80, 90);
+}
