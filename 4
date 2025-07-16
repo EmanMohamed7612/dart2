@@ -1,0 +1,15 @@
+  int add(int a, int b) => a + b;
+  int square(int x) => x * x;
+  int triple(int x) => x * 3;
+void calculate(int num) {
+
+  int result = add(square(num), triple(num));
+
+  print("Square of $num is ${square(num)}");
+  print("Triple of $num is ${triple(num)}");
+  print("Sum = $result");
+}
+
+void main(){
+calculate(4);
+}
