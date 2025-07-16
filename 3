@@ -1,0 +1,14 @@
+void filterAndSumEvens(List<int> numbers) {
+  List<int> evens = numbers.where((n) {
+    return n % 2 == 0;
+  }).toList();
+
+  int sum = 0;
+  evens.forEach((n) => sum += n);
+
+  print("Even numbers: $evens");
+  print("Sum of evens: $sum");
+}
+void main(){
+filterAndSumEvens([1, 2, 3, 4, 5, 6]);
+}
