@@ -1,0 +1,18 @@
+void createAccount({
+  required String username,
+  required String email,
+  String role = "User",
+  bool isActive = true,
+}) {
+  String status = isActive ? "Active" : "Inactive";
+
+  print("Account Created:");
+  print("Username: $username");
+  print("Email: $email");
+  print("Role: $role");
+  print("Status: $status");
+}
+
+void main(){
+ createAccount(username: "eman99", email: "eman@mail.com");
+}
