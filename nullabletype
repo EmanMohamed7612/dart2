@@ -1,0 +1,10 @@
+//nullable type
+void main() {
+  String? name;
+  name = null;
+  if (name == null) {
+    print("Name is missing.");
+  } else {
+    print("Hello, $name!");
+  }
+}
