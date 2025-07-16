@@ -1,0 +1,16 @@
+String greetUserByTime(String name, int hour) {
+  String timeOfDay;
+
+  if (hour < 12) {
+    timeOfDay = "morning";
+  } else if (hour < 18) {
+    timeOfDay = "afternoon";
+  } else {
+    timeOfDay = "evening";
+  }
+
+  return "Good $timeOfDay, $name!";
+}
+void main(){
+print(greetUserByTime("Ahmed", 14));
+}
